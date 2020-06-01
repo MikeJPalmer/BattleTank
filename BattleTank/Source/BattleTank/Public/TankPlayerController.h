@@ -10,8 +10,7 @@
 /**
  * 
  */
-UCLASS()
-class BATTLETANK_API ATankPlayerController : public APlayerController
+UCLASS() class BATTLETANK_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	
