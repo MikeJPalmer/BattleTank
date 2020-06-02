@@ -17,10 +17,13 @@ UCLASS() class BATTLETANK_API ATankPlayerController : public APlayerController
 public:
 	void BeginPlay() override;
 	void Tick(float DeltaTime) override;
-
 	ATank* GetControlledTank() const;
 
+private:
 	// Start the tank moving the barrel so that a shot would hit where
 	// the crosshair intersects with the world.
 	void AimTowardsCrosshair();
+
+	// Return OUT parameter, true if hit landscape
+	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
 };
