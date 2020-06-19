@@ -18,6 +18,4 @@ public:
 private:
 	void BeginPlay() override;
 	void Tick(float DeltaTime) override;
-	ATank* GetAIControlledTank() const;
-	ATank* GetPlayerTank() const;
 };
