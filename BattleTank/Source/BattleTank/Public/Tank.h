@@ -49,7 +49,7 @@ private:
 	TSubclassOf<AProjectile> ProjectileBluePrint;
 
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
-	float LaunchSpeed = 5000;
+	float LaunchSpeed = 5000.f;
 
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
 	float ReloadTimeInSeconds = 3.f;
